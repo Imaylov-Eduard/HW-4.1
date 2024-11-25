@@ -1,5 +1,6 @@
 public class Main {
     public static void main(String[] args) {
+
         System.out.println("Задание№1");
 
         int age = 18;
@@ -22,9 +23,9 @@ public class Main {
 
         int speedKmH = 60;
         if (speedKmH >= 60) {
-            System.out.println("Если скорость больше 60 км/ч то прийдется заплотить штраф");
+            System.out.println("Если скорость больше " + speedKmH + "км/ч то прийдется заплотить штраф");
         } else {
-            System.out.println("Если скорость меньше 60 км/ч можно ездить спокойно");
+            System.out.println("Если скорость меньше " + speedKmH + "км/ч можно ездить спокойно");
         }
 
         System.out.println("Задание№4");
@@ -44,19 +45,20 @@ public class Main {
             System.out.println("Если возраст подростка от 18 до 24 лет то он должен ходить в университет");
         } else System.out.println("Если возраст подростка меньше 18 и больше 24 он не должен ходить в университет");
         if (ageOfThePerson1 > 24) {
-            System.out.println("Если возраст подростка больше 24 то он должен ходить на работу");
+            System.out.println("Если возраст подростка больше 24 то он должен ходить на работу");}
 
-            System.out.println("Задание№5");
 
-            int childsAge1 = 5;
-            if (childsAge1 < 5) {
-                System.out.println("Если возраст ребенку меньше 5, то он не может кататься на аттракционе.");
-                if (childsAge1 < 5 && childsAge1 > 14) ;
-            } else
-                System.out.println("Если возраст ребенка больше 5 но меньше 14, то он может кататься на аттракционе только в сопровождении взрослых.");
-            if (childsAge1 > 14)
-                System.out.println("Если возраст ребенка больше 14, то он может кататься на аттракционе самостоятельно.");
+        System.out.println("Задание№5");
 
+        int childAge = 5;
+
+        if (childAge < 5) {
+            System.out.println("Если возраст ребенка равен " + childAge + ", то ему нельзя кататься на аттракционе");
+        } else if (childAge >= 5 && childAge < 14) {
+            System.out.println("Если возраст ребенка равен " + childAge + ", то ему можно кататься на аттракционе в сопровождении взрослого");
+        } else {
+            System.out.println("Если возраст ребенка равен " + childAge + ", то ему можно кататься на аттракционе без сопровождения взрослого");
+        }
 
             System.out.println("Задание#6");
 
@@ -82,7 +84,6 @@ public class Main {
                 System.out.println("Максимальное число равное " + three);
             } else if (three > one && three > two) {
                 System.out.println("Максимальное число равное " + three);
-            }
         }
     }
 }
