@@ -1,7 +1,7 @@
 public class Main {
     public static void main(String[] args) {
 
-        System.out.println("Задание№1.ю");
+        System.out.println("Задание№1");
 
         int age = 18;
         if (age >= 18) {
@@ -10,7 +10,7 @@ public class Main {
             System.out.println("Если возраст человека равен меньше 18, то он не совершеннолетний");
         }
 
-        System.out.println("Задание№2.");
+        System.out.println("Задание№2");
 
         int temperature = 5;
         if (temperature <= 5) {
